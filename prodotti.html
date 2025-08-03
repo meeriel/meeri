@@ -9,7 +9,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fdd9e5;
+      background-color: #fdd9e5; /* ✨ Sfondo rosa originale */
       color: #333;
     }
     header {
@@ -26,7 +26,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      position: relative;
       background-color: #f7fdff;
       padding: 15px 20px;
     }
@@ -99,25 +98,21 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
+      justify-items: center;
     }
     .foto-container img {
-      width: 100%;
-      border-radius: 15px;
+      width: 95%;
+      max-width: 450px;
       height: 250px;
       object-fit: cover;
+      border-radius: 15px;
+      background-color: #fdf4f8;
+      border: 2px solid #eec2d3;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s;
     }
     .foto-container img:hover {
       transform: scale(1.05);
-    }
-    #contatti {
-      text-align: center;
-      padding: 40px 20px;
-    }
-    #contatti h2 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 2.5em;
-      color: #a61c58;
     }
     .btn-whatsapp {
       display: inline-block;
@@ -128,7 +123,7 @@
       text-decoration: none;
       font-weight: bold;
       transition: background-color 0.3s;
-      margin-top: 10px;
+      margin-top: 40px;
     }
     .btn-whatsapp:hover {
       background-color: #1ebc5e;
@@ -140,53 +135,11 @@
       color: #3c2c35;
       font-size: 0.9em;
     }
-    .side-menu {
-      position: fixed;
-      top: 0;
-      right: 0;
-      transform: translateX(100%);
-      width: 300px;
-      height: 100%;
-      background-color: #f7fdff;
-      box-shadow: -2px 0 8px rgba(0,0,0,0.3);
-      padding: 20px;
-      transition: transform 0.3s ease-in-out;
-      z-index: 1000;
-    }
-    .side-menu.open {
-      transform: translateX(0);
-    }
-    .side-menu h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8em;
-      margin-bottom: 25px;
-      color: #a61c58;
-    }
-    .side-menu a {
-      display: block;
-      margin-bottom: 20px;
-      font-weight: bold;
-      text-transform: lowercase;
-      color: #3c2c35;
-      text-decoration: none;
-    }
-    .side-menu a:hover {
-      color: #a61c58;
-    }
-    .side-menu button {
-      background-color: #a61c58;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 10px;
-      cursor: pointer;
-    }
   </style>
 </head>
 <body>
 
   <header><h1>Collezione Meeriel</h1></header>
-
   <nav>
     <div>Borsette all'uncinetto – artigianato autentico dalla Sardegna</div>
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
@@ -235,20 +188,27 @@
       <div class="foto-container">
         <img src="img/soft1.jpg" alt="Soft Stitch 1">
         <img src="img/soft2.jpg" alt="Soft Stitch 2">
-        <img src="img/soft3.jpg" alt="Soft Stitch 3">
-        <img src="img/soft4.jpg" alt="Soft Stitch 4">
-        <img src="img/soft5.jpg" alt="Soft Stitch 5">
-        <img src="img/soft6.jpg" alt="Soft Stitch 6">
       </div>
     </div>
 
     <!-- Summer Season -->
     <div class="borsa">
       <h2>Summer Season – €50</h2>
-    <div class="descrizione">Ispirata alla luce e ai colori dell’estate mediterranea</div>
-    <div class="foto-container">
-      <img src="img/summer1.jpg" alt="Summer Season 1">
-      <img src="img/summer2.jpg" alt="Summer Season 2">
+      <div class="descrizione">Ispirata alla luce e ai colori dell’estate mediterranea</div>
+      <div class="foto-container">
+        <img src="img/summer1.jpg" alt="Summer Season 1">
+        <img src="img/summer2.jpg" alt="Summer Season 2">
+      </div>
     </div>
+  </section>
+
+  <div style="text-align:center;">
+    <a href="https://wa.me/18772241042" target="_blank" class="btn-whatsapp">💬 Contattaci su WhatsApp</a>
   </div>
-</section>
+
+  <footer>
+    Meeriel © 2025 | Made with love in Sardegna
+  </footer>
+
+</body>
+</html>
