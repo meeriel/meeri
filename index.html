@@ -27,17 +27,20 @@
 
     nav {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      position: relative;
       background-color: #f7fdff;
       padding: 15px 20px;
     }
 
     nav div {
+      text-align: center;
       font-family: 'Playfair Display', serif;
       font-size: 1.2em;
       font-weight: bold;
       color: #a61c58;
+      flex: 1;
     }
 
     .menu-btn {
@@ -46,6 +49,8 @@
       font-size: 1.8em;
       cursor: pointer;
       color: #3c2c35;
+      position: absolute;
+      right: 20px;
     }
 
     .announcement {
@@ -151,18 +156,19 @@
     .side-menu {
       position: fixed;
       top: 0;
-      right: -320px;
+      right: 0;
+      transform: translateX(100%);
       width: 300px;
       height: 100%;
       background-color: #f7fdff;
       box-shadow: -2px 0 8px rgba(0,0,0,0.3);
       padding: 20px;
-      transition: right 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
       z-index: 1000;
     }
 
     .side-menu.open {
-      right: 0;
+      transform: translateX(0);
     }
 
     .side-menu h2 {
@@ -205,20 +211,20 @@
   </nav>
 
   <div class="announcement">In arrivo la collezione Inverno 2026</div>
-  <div class="section-title">Le creazioni di Meeriel – un tocco di stile fatto a mano</div>
+  <div class="section-title">Alcune creazioni di Meeriel:</div>
 
   <section class="products">
     <div class="product">
       <img src="img/pink-ibiscus.jpg" alt="Pink Ibiscus">
       <h3>Pink Ibiscus</h3>
       <p>Borsa floreale dallo stile elegante e raffinato.</p>
-      <p><strong>€ 45,00</strong></p>
+      <p><strong>€ 20,00</strong></p>
     </div>
     <div class="product">
       <img src="img/clutch-bag.jpg" alt="Clutch Bag">
       <h3>Clutch Bag</h3>
       <p>Perfetta per le serate e le occasioni speciali.</p>
-      <p><strong>€ 40,00</strong></p>
+      <p><strong>€ 30,00</strong></p>
     </div>
   </section>
 
@@ -226,7 +232,7 @@
     <a class="btn-prodotti" href="prodotti.html">Tutti i nostri prodotti</a>
     <h2>Contattaci</h2>
     <p>Hai domande o desideri ordinare una borsa personalizzata?</p>
-    <a class="btn-whatsapp" href="https://wa.me/1234567890" target="_blank">Contatta Meeriel</a>
+    <a class="btn-whatsapp" href="https://wa.me/3516068246" target="_blank">Contatta Meeriel</a>
   </section>
 
   <footer>
