@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meeriel Crochet Handbags</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdd9e5;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      margin: 0;
+      color: #3c2c35;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f7fdff;
+      padding: 15px 20px;
+    }
+
+    nav div {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #a61c58;
+    }
+
+    .menu-btn {
+      background: none;
+      border: none;
+      font-size: 1.8em;
+      cursor: pointer;
+      color: #3c2c35;
+    }
+
+    .announcement {
+      text-align: center;
+      font-size: 2em;
+      font-family: 'Great Vibes', cursive;
+      color: #a61c58;
+      margin: 40px 0 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #3c2c35;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 30px;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .btn-prodotti {
+      display: inline-block;
+      background-color: white;
+      color: #a61c58;
+      padding: 18px 36px;
+      font-size: 1.3em;
+      border-radius: 20px;
+      border: 2px solid #a61c58;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+      margin-bottom: 35px;
+    }
+
+    .btn-prodotti:hover {
+      background-color: #f7fdff;
+      color: #3c2c35;
+      transform: scale(1.05);
+    }
+
+    .btn-whatsapp {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1ebc5e;
+    }
+
+    #contatti {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    #contatti h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f7fdff;
+      color: #3c2c35;
+      font-size: 0.9em;
+    }
+
+    .side-menu {
+      position: fixed;
+      top: 0;
+      right: -320px;
+      width: 300px;
+      height: 100%;
+      background-color: #f7fdff;
+      box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+      padding: 20px;
+      transition: right 0.3s ease-in-out;
+      z-index: 1000;
+    }
+
+    .side-menu.open {
+      right: 0;
+    }
+
+    .side-menu h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8em;
+      margin-bottom: 25px;
+      color: #a61c58;
+    }
+
+    .side-menu a {
+      display: block;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-transform: lowercase;
+      color: #3c2c35;
+      text-decoration: none;
+    }
+
+    .side-menu a:hover {
+      color: #a61c58;
+    }
+
+    .side-menu button {
+      background-color: #a61c58;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header><h1>Meeriel Crochet Handbags</h1></header>
+
+  <nav>
+    <div>Borsette all'uncinetto – artigianato autentico dalla Sardegna</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <div class="announcement">In arrivo la collezione Inverno 2026</div>
+  <div class="section-title">Le creazioni di Meeriel – un tocco di stile fatto a mano</div>
+
+  <section class="products">
+    <div class="product">
+      <img src="img/pink-ibiscus.jpg" alt="Pink Ibiscus">
+      <h3>Pink Ibiscus</h3>
+      <p>Borsa floreale dallo stile elegante e raffinato.</p>
+      <p><strong>€ 45,00</strong></p>
+    </div>
+    <div class="product">
+      <img src="img/clutch-bag.jpg" alt="Clutch Bag">
+      <h3>Clutch Bag</h3>
+      <p>Perfetta per le serate e le occasioni speciali.</p>
+      <p><strong>€ 40,00</strong></p>
+    </div>
+  </section>
+
+  <section id="contatti">
+    <a class="btn-prodotti" href="prodotti.html">Tutti i nostri prodotti</a>
+    <h2>Contattaci</h2>
+    <p>Hai domande o desideri ordinare una borsa personalizzata?</p>
+    <a class="btn-whatsapp" href="https://wa.me/1234567890" target="_blank">Contatta Meeriel</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Meeriel Crochet Handbags – Tutti i diritti riservati
+  </footer>
+
+  <div id="sideMenu" class="side-menu">
+    <h2>Menù di Meeriel</h2>
+    <a href="prodotti.html">Tutti i prodotti</a>
+    <a href="#contatti">Contattaci</a>
+    <button onclick="toggleMenu()">Chiudi</button>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("open");
+    }
+  </script>
+</body>
+</html>
