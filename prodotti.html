@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Collezione Meeriel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdd9e5;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      margin: 0;
+      color: #3c2c35;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+      margin: 30px 0;
+      color: #3c2c35;
+      font-family: 'Playfair Display', serif;
+    }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      padding: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .borsa {
+      background-color: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .borsa h2 {
+      font-family: 'Playfair Display', serif;
+      color: #a61c58;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .descrizione {
+      text-align: center;
+      font-size: 1em;
+      font-style: italic;
+      margin-bottom: 20px;
+      color: #3c2c35;
+    }
+    .foto-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .foto-container img {
+      width: 100%;
+      border-radius: 15px;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .foto-container img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f7fdff;
+      font-size: 0.9em;
+      color: #3c2c35;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Collezione Meeriel</h1>
+  </header>
+
+  <div class="section-title">Ogni borsa racconta una storia. Scopri le nostre creazioni</div>
+
+  <section class="gallery">
+    
+    <div class="borsa">
+      <h2>Ibiscus Rosa</h2>
+      <div class="descrizione">Femminile e floreale, perfetta per la primavera</div>
+      <div class="foto-container">
+        <img src="img/ibiscus1.jpg" alt="Ibiscus Rosa 1">
+        <img src="img/ibiscus2.jpg" alt="Ibiscus Rosa 2">
+        <img src="img/ibiscus3.jpg" alt="Ibiscus Rosa 3">
+        <img src="img/ibiscus4.jpg" alt="Ibiscus Rosa 4">
+      </div>
+    </div>
+
+    <div class="borsa">
+      <h2>Clutch Elegante</h2>
+      <div class="descrizione">Minimal e raffinata per serate speciali</div>
+      <div class="foto-container">
+        <img src="img/clutch1.jpg" alt="Clutch Elegante 1">
+        <img src="img/clutch2.jpg" alt="Clutch Elegante 2">
+        <img src="img/clutch3.jpg" alt="Clutch Elegante 3">
+        <img src="img/clutch4.jpg" alt="Clutch Elegante 4">
+      </div>
+    </div>
+
+    <div class="borsa">
+      <h2>Borsa Tramonto</h2>
+      <div class="descrizione">Toni caldi che ricordano l’estate in Sardegna</div>
+      <div class="foto-container">
+        <img src="img/tramonto1.jpg" alt="Tramonto 1">
+        <img src="img/tramonto2.jpg" alt="Tramonto 2">
+        <img src="img/tramonto3.jpg" alt="Tramonto 3">
+        <img src="img/tramonto4.jpg" alt="Tramonto 4">
+      </div>
+    </div>
+
+    <div class="borsa">
+      <h2>Seta di Mare</h2>
+      <div class="descrizione">Colori freschi e dettagli ispirati alle onde</div>
+      <div class="foto-container">
+        <img src="img/mare1.jpg" alt="Seta di Mare 1">
+        <img src="img/mare2.jpg" alt="Seta di Mare 2">
+        <img src="img/mare3.jpg" alt="Seta di Mare 3">
+        <img src="img/mare4.jpg" alt="Seta di Mare 4">
+      </div>
+    </div>
+
+    <div class="borsa">
+      <h2>Notte Stellata</h2>
+      <div class="descrizione">Un mix di nero e argento per un look brillante</div>
+      <div class="foto-container">
+        <img src="img/notte1.jpg" alt="Notte Stellata 1">
+        <img src="img/notte2.jpg" alt="Notte Stellata 2">
+        <img src="img/notte3.jpg" alt="Notte Stellata 3">
+        <img src="img/notte4.jpg" alt="Notte Stellata 4">
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Meeriel Crochet Handbags – Tutti i diritti riservati
+  </footer>
+
+</body>
+</html>
