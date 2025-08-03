@@ -2,6 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Collezione Meeriel</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet" />
   <style>
@@ -13,7 +14,7 @@
     }
     header {
       text-align: center;
-      padding: 40px 20px 10px;
+      padding: 40px 20px 20px;
     }
     header h1 {
       font-family: 'Great Vibes', cursive;
@@ -21,11 +22,49 @@
       margin: 0;
       color: #3c2c35;
     }
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-color: #f7fdff;
+      padding: 15px 20px;
+    }
+    nav div {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #a61c58;
+      flex: 1;
+    }
+    .menu-btn {
+      background: none;
+      border: none;
+      font-size: 1.8em;
+      cursor: pointer;
+      color: #3c2c35;
+      position: absolute;
+      right: 20px;
+    }
+    .back-link {
+      display: block;
+      text-align: left;
+      padding: 20px;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #a61c58;
+      font-family: 'Playfair Display', serif;
+    }
+    .back-link::before {
+      content: "← ";
+      font-size: 1.4em;
+    }
     .section-title {
       text-align: center;
       font-size: 1.8em;
       font-weight: bold;
-      margin: 30px 0;
+      margin: 20px 0;
       color: #3c2c35;
       font-family: 'Playfair Display', serif;
     }
@@ -34,7 +73,7 @@
       flex-direction: column;
       gap: 50px;
       padding: 30px;
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
     }
     .borsa {
@@ -58,7 +97,7 @@
     }
     .foto-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
     }
     .foto-container img {
@@ -71,85 +110,145 @@
     .foto-container img:hover {
       transform: scale(1.05);
     }
+    #contatti {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    #contatti h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5em;
+      color: #a61c58;
+    }
+    .btn-whatsapp {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+    .btn-whatsapp:hover {
+      background-color: #1ebc5e;
+    }
     footer {
       text-align: center;
       padding: 20px;
       background-color: #f7fdff;
-      font-size: 0.9em;
       color: #3c2c35;
+      font-size: 0.9em;
+    }
+    .side-menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      transform: translateX(100%);
+      width: 300px;
+      height: 100%;
+      background-color: #f7fdff;
+      box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+      padding: 20px;
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+    }
+    .side-menu.open {
+      transform: translateX(0);
+    }
+    .side-menu h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8em;
+      margin-bottom: 25px;
+      color: #a61c58;
+    }
+    .side-menu a {
+      display: block;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-transform: lowercase;
+      color: #3c2c35;
+      text-decoration: none;
+    }
+    .side-menu a:hover {
+      color: #a61c58;
+    }
+    .side-menu button {
+      background-color: #a61c58;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Collezione Meeriel</h1>
-  </header>
+  <header><h1>Collezione Meeriel</h1></header>
 
+  <nav>
+    <div>Borsette all'uncinetto – artigianato autentico dalla Sardegna</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <a class="back-link" href="index.html">Torna alla Home</a>
   <div class="section-title">Ogni borsa racconta una storia. Scopri le nostre creazioni</div>
 
   <section class="gallery">
-    
+    <!-- Pink Ibiscus -->
     <div class="borsa">
-      <h2>Ibiscus Rosa</h2>
-      <div class="descrizione">Femminile e floreale, perfetta per la primavera</div>
+      <h2>Pink Ibiscus – €25</h2>
+      <div class="descrizione">Borsa floreale dallo stile elegante e raffinato</div>
       <div class="foto-container">
-        <img src="img/ibiscus1.jpg" alt="Ibiscus Rosa 1">
-        <img src="img/ibiscus2.jpg" alt="Ibiscus Rosa 2">
-        <img src="img/ibiscus3.jpg" alt="Ibiscus Rosa 3">
-        <img src="img/ibiscus4.jpg" alt="Ibiscus Rosa 4">
+        <img src="img/ibiscus1.jpg" alt="Pink Ibiscus 1">
+        <img src="img/ibiscus2.jpg" alt="Pink Ibiscus 2">
+        <img src="img/ibiscus3.jpg" alt="Pink Ibiscus 3">
+        <img src="img/ibiscus4.jpg" alt="Pink Ibiscus 4">
       </div>
     </div>
 
+    <!-- Clutch Bag -->
     <div class="borsa">
-      <h2>Clutch Elegante</h2>
-      <div class="descrizione">Minimal e raffinata per serate speciali</div>
+      <h2>Clutch Bag – €30</h2>
+      <div class="descrizione">Perfetta per le serate e le occasioni speciali</div>
       <div class="foto-container">
-        <img src="img/clutch1.jpg" alt="Clutch Elegante 1">
-        <img src="img/clutch2.jpg" alt="Clutch Elegante 2">
-        <img src="img/clutch3.jpg" alt="Clutch Elegante 3">
-        <img src="img/clutch4.jpg" alt="Clutch Elegante 4">
+        <img src="img/clutch1.jpg" alt="Clutch Bag 1">
+        <img src="img/clutch2.jpg" alt="Clutch Bag 2">
       </div>
     </div>
 
+    <!-- Kelly -->
     <div class="borsa">
-      <h2>Borsa Tramonto</h2>
-      <div class="descrizione">Toni caldi che ricordano l’estate in Sardegna</div>
+      <h2>Kelly – €15</h2>
+      <div class="descrizione">Piccola e versatile, da giorno e da sera</div>
       <div class="foto-container">
-        <img src="img/tramonto1.jpg" alt="Tramonto 1">
-        <img src="img/tramonto2.jpg" alt="Tramonto 2">
-        <img src="img/tramonto3.jpg" alt="Tramonto 3">
-        <img src="img/tramonto4.jpg" alt="Tramonto 4">
+        <img src="img/kelly1.jpg" alt="Kelly 1">
+        <img src="img/kelly2.jpg" alt="Kelly 2">
       </div>
     </div>
 
+    <!-- Soft Stitch -->
     <div class="borsa">
-      <h2>Seta di Mare</h2>
-      <div class="descrizione">Colori freschi e dettagli ispirati alle onde</div>
+      <h2>Soft Stitch – €25</h2>
+      <div class="descrizione">Design morbido e lavorazione a punto largo</div>
       <div class="foto-container">
-        <img src="img/mare1.jpg" alt="Seta di Mare 1">
-        <img src="img/mare2.jpg" alt="Seta di Mare 2">
-        <img src="img/mare3.jpg" alt="Seta di Mare 3">
-        <img src="img/mare4.jpg" alt="Seta di Mare 4">
+        <img src="img/soft1.jpg" alt="Soft Stitch 1">
+        <img src="img/soft2.jpg" alt="Soft Stitch 2">
+        <img src="img/soft3.jpg" alt="Soft Stitch 3">
+        <img src="img/soft4.jpg" alt="Soft Stitch 4">
+        <img src="img/soft5.jpg" alt="Soft Stitch 5">
+        <img src="img/soft6.jpg" alt="Soft Stitch 6">
       </div>
     </div>
 
+    <!-- Summer Season -->
     <div class="borsa">
-      <h2>Notte Stellata</h2>
-      <div class="descrizione">Un mix di nero e argento per un look brillante</div>
-      <div class="foto-container">
-        <img src="img/notte1.jpg" alt="Notte Stellata 1">
-        <img src="img/notte2.jpg" alt="Notte Stellata 2">
-        <img src="img/notte3.jpg" alt="Notte Stellata 3">
-        <img src="img/notte4.jpg" alt="Notte Stellata 4">
-      </div>
+      <h2>Summer Season – €50</h2>
+    <div class="descrizione">Ispirata alla luce e ai colori dell’estate mediterranea</div>
+    <div class="foto-container">
+      <img src="img/summer1.jpg" alt="Summer Season 1">
+      <img src="img/summer2.jpg" alt="Summer Season 2">
     </div>
-
-  </section>
-
-  <footer>
-    &copy; 2025 Meeriel Crochet Handbags – Tutti i diritti riservati
-  </footer>
-
-</body>
-</html>
+  </div>
+</section>
